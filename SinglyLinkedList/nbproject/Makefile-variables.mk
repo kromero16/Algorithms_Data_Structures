@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-MacOSX
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX
-CND_ARTIFACT_NAME_Debug=algorithms_data_structures
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/algorithms_data_structures
+CND_ARTIFACT_NAME_Debug=singlylinkedlist
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/singlylinkedlist
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-MacOSX/package
-CND_PACKAGE_NAME_Debug=algorithmsdatastructures.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/algorithmsdatastructures.tar
+CND_PACKAGE_NAME_Debug=singlylinkedlist.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/singlylinkedlist.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-MacOSX
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-MacOSX
-CND_ARTIFACT_NAME_Release=algorithms_data_structures
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/algorithms_data_structures
+CND_ARTIFACT_NAME_Release=singlylinkedlist
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/singlylinkedlist
 CND_PACKAGE_DIR_Release=dist/Release/GNU-MacOSX/package
-CND_PACKAGE_NAME_Release=algorithmsdatastructures.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/algorithmsdatastructures.tar
+CND_PACKAGE_NAME_Release=singlylinkedlist.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/singlylinkedlist.tar
 #
 # include compiler specific variables
 #

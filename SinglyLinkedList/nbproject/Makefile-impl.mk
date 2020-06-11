@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Algorithms_Data_Structures
+PROJECTNAME=SinglyLinkedList
 
 # Active Configuration
 DEFAULTCONF=Debug
