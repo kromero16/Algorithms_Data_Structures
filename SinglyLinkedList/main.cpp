@@ -92,7 +92,7 @@ void delete_node(Node **front,int data,int &length){
     Node *prev = *front;
     Node *target = *front;
   
-    
+    cout<<"TTEST";
     //check if data is found in list & get position
     int n = search_data(front,data,length);
     
