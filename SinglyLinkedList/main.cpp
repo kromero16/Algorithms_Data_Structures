@@ -77,6 +77,10 @@ void reverse_list(Node **front){
     Node *next = NULL;
     Node *prev = NULL;
     
+    while(curr!=NULL){
+        
+    }
+    
 }
 
 //delete node if found
