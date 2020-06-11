@@ -73,7 +73,9 @@ int main(int argc, char** argv) {
 }
 //reverse list
 void reverse_list(Node **front){
-    
+    Node *curr = *front;
+    Node *next = NULL;
+    Node *prev = NULL;
     
 }
 
