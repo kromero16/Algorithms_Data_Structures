@@ -73,17 +73,21 @@ int main(int argc, char** argv) {
 }
 //reverse list
 void reverse_list(Node **front){
+    //create pointers
     Node *curr = *front;
     Node *next = NULL;
     Node *prev = NULL;
     
+    //loop while list not null
     while(curr!=NULL){
         next = curr->next;
         curr->next = prev;
         prev = curr;
         curr = next;
     }
+    //front points to last node
     *front = prev;
+    
 }
 
 //delete node if found
