@@ -27,6 +27,7 @@ struct Node{
 void push_front(Node **,int,int&);
 void print_forward(Node **,int&);
 void insertAt(Node**,int,int&,int);
+void deleteFront(Node **,int &);
 
 /*
  * 
@@ -47,6 +48,10 @@ int main(int argc, char** argv) {
     insertAt(&front,2444,length,4);
     insertAt(&front,10100,length,8);
     print_forward(&front,length);
+    cout<<"Deleting head \n";
+    deleteFront(&front,length);
+    deleteFront(&front,length);
+    print_forward(&front,length);
     
     
     
@@ -54,6 +59,20 @@ int main(int argc, char** argv) {
     return 0;
     
     
+}
+//delete front node
+void deleteFront(Node **front,int &length){
+    //delete
+    Node *curr = *front;
+    
+    *front = curr->next;
+    curr->prev = NULL;
+    curr->next = NULL;
+   
+    delete curr;
+    
+    //
+    length--;
 }
 
 //insert at given position
