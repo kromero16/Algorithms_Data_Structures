@@ -43,6 +43,9 @@ int main(int argc, char** argv) {
     insertAt(&front,34,length,1);
     insertAt(&front,23,length,1);
     insertAt(&front,266,length,2);
+    insertAt(&front,267,length,3);
+    insertAt(&front,2444,length,4);
+    insertAt(&front,10100,length,8);
     print_forward(&front,length);
     
     
@@ -65,31 +68,51 @@ int main(int argc, char** argv) {
         Node *curr = *front;
         Node *temp = NULL;
         
-        //add front
-        if(pos==1){    
+        //add head
+        if(pos==1){
             newNode->next = curr;
             curr->prev = newNode;
             *front = newNode;
+            
+            //increment length
             length++;
-        }
-        //add end
-        else if(pos==length){
             
         }
-        else if(pos>length){
+        //add at end
+        else if(pos==length){
+            //traverse list to end
+            while(curr->next!=NULL){
+                curr = curr->next;
+            }
+            //add at end
+            curr->next = newNode;
+            newNode->prev = curr;
+            
+            //increment length
+            length++;
+        }
+        else if(pos<0||pos>length){
             cout<<"position not in range \n";
         }
+        //add middle
         else{
-            //add at position
+            //traverse to position-1
             for(int i=1;i<pos-1;i++){
                 curr = curr->next;
             }
+            //add middle
             temp = curr->next;
             curr->next = newNode;
+            newNode->prev = curr;
             newNode->next = temp;
             temp->prev = newNode;
+            
+            //increment length
             length++;
+            
         }
+     
+        
         
     }
 
